@@ -1,21 +1,18 @@
 // **Aim**: Create the function that takes an array with objects and returns the sum of people's budgets.
 
-getBudgets ([
+const getBudgets = ([
     {name: "Chad", age:36, budget: 15000},
     {name: "Meagan", age:36, budget: 20000},
     {name: "Rohan", age: 2, budget: 200},
 ]);
 
-(Amount) => (userBalance-=amount)
+let result = getBudgets.map(a => a.budget);
+let sum = 0;
+for (let i = 0; i < result.length; i++) {
+    sum += result[i];
+}
 
-
-
-
-
-
-
-
-
+console.log(sum);
 
 
 
